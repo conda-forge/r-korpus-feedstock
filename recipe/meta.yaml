@@ -1,4 +1,4 @@
-{% set version = "0.13-2" %}
+{% set version = "0.13-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/koRpus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/koRpus/koRpus_{{ version }}.tar.gz
-  sha256: 611cb10a8d307ec573280a114b3e99a6915b0c10b2d3d21dbf54a7c8ee59608a
+  sha256: d0f35925751cea8cfffe64466dd4207cb0fb1b55d569897f3177facfad15819b
 
 build:
   merge_build_host: true  # [win]
